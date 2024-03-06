@@ -313,7 +313,6 @@ def desarrollador_reviews_analysis(desarrolladora):
 
 
 # SISTEMA DE RECOMENDACIÓN - USER-ITEM
-# SISTEMA DE RECOMENDACIÓN - USER-ITEM
 def recomendacion_usuario(user_id):
     """
     Sistema de recomendación user-item.
@@ -403,7 +402,7 @@ def recomendacion_juego(item_id):
 
     try:
         # Cargar la matriz de similitud de items_similarity
-        item_similarity_df = load('/content/items_similar.joblib')
+        item_similarity_df = load('item_similarity_df.joblib')
 
         # mensaje de test para verificar que se cargó la matriz precalculada
         print("Se cargó la matriz precalculada.")
